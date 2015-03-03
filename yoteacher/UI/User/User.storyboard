@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YVU-fY-bVG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+    </dependencies>
+    <scenes>
+        <!--User Status View Controller-->
+        <scene sceneID="APw-qU-avc">
+            <objects>
+                <viewController id="YVU-fY-bVG" customClass="UserStatusViewController" customModule="yoteacher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="74u-sc-Grz"/>
+                        <viewControllerLayoutGuide type="bottom" id="hq8-yB-fGn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cBt-7a-5vU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-5z-WwJ">
+                                <rect key="frame" x="150" y="20" width="150" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ci-so-a0s" customClass="QRadioButton">
+                                        <rect key="frame" x="0.0" y="7" width="150" height="26"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkO-ED-jyO" customClass="QRadioButton">
+                                        <rect key="frame" x="0.0" y="37" width="150" height="26"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLs-3K-Zk7" customClass="QRadioButton">
+                                        <rect key="frame" x="0.0" y="67" width="150" height="26"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GLs-3K-Zk7" secondAttribute="bottom" constant="7" id="2AX-wZ-fCy"/>
+                                    <constraint firstItem="GLs-3K-Zk7" firstAttribute="trailing" secondItem="CkO-ED-jyO" secondAttribute="trailing" id="AVX-gG-cHl"/>
+                                    <constraint firstItem="GLs-3K-Zk7" firstAttribute="leading" secondItem="CkO-ED-jyO" secondAttribute="leading" id="K3D-Te-bg0"/>
+                                    <constraint firstItem="CkO-ED-jyO" firstAttribute="top" secondItem="6ci-so-a0s" secondAttribute="bottom" constant="4" id="N61-pd-ER5"/>
+                                    <constraint firstItem="CkO-ED-jyO" firstAttribute="centerY" secondItem="SKA-5z-WwJ" secondAttribute="centerY" id="VqX-tI-7VW"/>
+                                    <constraint firstItem="GLs-3K-Zk7" firstAttribute="top" secondItem="CkO-ED-jyO" secondAttribute="bottom" constant="4" id="X0G-mz-xna"/>
+                                    <constraint firstItem="CkO-ED-jyO" firstAttribute="leading" secondItem="6ci-so-a0s" secondAttribute="leading" id="aXr-dW-t8M"/>
+                                    <constraint firstItem="6ci-so-a0s" firstAttribute="top" secondItem="SKA-5z-WwJ" secondAttribute="top" constant="7" id="fra-tX-sE2"/>
+                                    <constraint firstItem="CkO-ED-jyO" firstAttribute="top" secondItem="SKA-5z-WwJ" secondAttribute="top" constant="37" id="fyg-JB-8PD"/>
+                                    <constraint firstItem="6ci-so-a0s" firstAttribute="trailing" secondItem="CkO-ED-jyO" secondAttribute="trailing" id="rl3-3i-D6Q"/>
+                                    <constraint firstItem="CkO-ED-jyO" firstAttribute="leading" secondItem="SKA-5z-WwJ" secondAttribute="leading" id="soh-C2-Mfw"/>
+                                    <constraint firstAttribute="trailing" secondItem="CkO-ED-jyO" secondAttribute="trailing" id="uMm-Ee-Q8p"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-MV-fQk">
+                                <rect key="frame" x="-1" y="215" width="322" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4b9-Eu-LnM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Change Password">
+                                    <color key="titleColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changePasswordButtonTouchUpInside:" destination="YVU-fY-bVG" eventType="touchUpInside" id="0zL-x5-BMa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z9F-w2-KKy" customClass="EGOImageView">
+                                <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8Jd-AA-mQ5"/>
+                                    <constraint firstAttribute="height" constant="100" id="hNa-kp-rou"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Just write something ..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyD-0k-jvT">
+                                <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="twitterEditingDidEnd:" destination="YVU-fY-bVG" eventType="editingDidEnd" id="c3F-Tw-Zmc"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EV-Tu-YNY">
+                                <rect key="frame" x="-1" y="275" width="322" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="chd-4g-4qn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Logout"/>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTouchUpInside:" destination="YVU-fY-bVG" eventType="touchUpInside" id="o7g-9w-5KJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SKA-5z-WwJ" firstAttribute="top" secondItem="Z9F-w2-KKy" secondAttribute="top" id="1md-1a-S29"/>
+                            <constraint firstItem="Z9F-w2-KKy" firstAttribute="leading" secondItem="cBt-7a-5vU" secondAttribute="leading" constant="20" symbolic="YES" id="4L5-ga-246"/>
+                            <constraint firstItem="Z9F-w2-KKy" firstAttribute="bottom" secondItem="SKA-5z-WwJ" secondAttribute="bottom" id="503-oD-Hfe"/>
+                            <constraint firstItem="SKA-5z-WwJ" firstAttribute="leading" secondItem="Z9F-w2-KKy" secondAttribute="trailing" constant="30" id="DkZ-Cf-TEL"/>
+                            <constraint firstItem="AyD-0k-jvT" firstAttribute="top" secondItem="Z9F-w2-KKy" secondAttribute="bottom" constant="25" id="KbZ-Go-byo"/>
+                            <constraint firstItem="eRg-MV-fQk" firstAttribute="centerX" secondItem="AyD-0k-jvT" secondAttribute="centerX" id="Qxs-pF-BGb"/>
+                            <constraint firstItem="eRg-MV-fQk" firstAttribute="leading" secondItem="cBt-7a-5vU" secondAttribute="leading" constant="-1" id="e6w-Tb-hEv"/>
+                            <constraint firstItem="Z9F-w2-KKy" firstAttribute="leading" secondItem="AyD-0k-jvT" secondAttribute="leading" id="gxu-tb-tob"/>
+                            <constraint firstItem="eRg-MV-fQk" firstAttribute="top" secondItem="AyD-0k-jvT" secondAttribute="bottom" constant="40" id="huo-qM-pbk"/>
+                            <constraint firstItem="eRg-MV-fQk" firstAttribute="leading" secondItem="3EV-Tu-YNY" secondAttribute="leading" id="kvM-Ak-Mq2"/>
+                            <constraint firstItem="AyD-0k-jvT" firstAttribute="trailing" secondItem="SKA-5z-WwJ" secondAttribute="trailing" id="p2p-6g-O54"/>
+                            <constraint firstItem="eRg-MV-fQk" firstAttribute="trailing" secondItem="3EV-Tu-YNY" secondAttribute="trailing" id="q0J-d6-RqZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SKA-5z-WwJ" secondAttribute="trailing" constant="20" symbolic="YES" id="woB-bt-hE6"/>
+                            <constraint firstItem="Z9F-w2-KKy" firstAttribute="top" secondItem="cBt-7a-5vU" secondAttribute="top" constant="20" symbolic="YES" id="woQ-qN-kZF"/>
+                            <constraint firstItem="3EV-Tu-YNY" firstAttribute="top" secondItem="eRg-MV-fQk" secondAttribute="bottom" constant="20" id="yGb-81-qoc"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="320" height="480"/>
+                        <size key="landscapeSize" width="480" height="320"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="avatarImageView" destination="Z9F-w2-KKy" id="61x-4B-QPH"/>
+                        <outlet property="awayRadioButton" destination="GLs-3K-Zk7" id="2LQ-eO-boh"/>
+                        <outlet property="busyRadioButton" destination="CkO-ED-jyO" id="CCD-tu-zAh"/>
+                        <outlet property="changePasswordButton" destination="eRg-MV-fQk" id="Qf8-E3-Y6o"/>
+                        <outlet property="dynamicTextField" destination="AyD-0k-jvT" id="PO9-fG-SWZ"/>
+                        <outlet property="freeRadioButton" destination="6ci-so-a0s" id="MwL-ui-4Kl"/>
+                        <outlet property="logoutButton" destination="3EV-Tu-YNY" id="dl2-5j-9SM"/>
+                        <outlet property="statusRadioGroup" destination="SKA-5z-WwJ" id="TKM-i5-Rqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vD-AO-TUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="338"/>
+        </scene>
+    </scenes>
+</document>

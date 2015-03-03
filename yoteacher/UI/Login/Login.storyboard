@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iNh-f2-tLO">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="2xi-bb-oOG">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iNh-f2-tLO" customClass="LoginViewController" customModule="yoteacher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tq0-2e-szW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ehp-go-fEh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RL1-Cu-z9H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120.120.png" translatesAutoresizingMaskIntoConstraints="NO" id="C9m-GK-Sen">
+                                <rect key="frame" x="100" y="55" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="cnF-Cd-1ti"/>
+                                    <constraint firstAttribute="width" constant="120" id="iQb-Zd-CFy"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone/Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TzB-Fh-7eU">
+                                <rect key="frame" x="85" y="225" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ol3-jT-F0m">
+                                <rect key="frame" x="141" y="381" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.29411764709999999" green="0.75686274509999996" blue="0.82352941180000006" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTouchUpInside:" destination="iNh-f2-tLO" eventType="touchUpInside" id="FaB-xS-zOX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n75-c8-ELC">
+                                <rect key="frame" x="85" y="273" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TzB-Fh-7eU" firstAttribute="top" secondItem="C9m-GK-Sen" secondAttribute="bottom" constant="50" id="1Xq-SX-hOA"/>
+                            <constraint firstItem="n75-c8-ELC" firstAttribute="top" secondItem="TzB-Fh-7eU" secondAttribute="bottom" constant="18" id="3kg-98-ksQ"/>
+                            <constraint firstItem="ol3-jT-F0m" firstAttribute="centerX" secondItem="RL1-Cu-z9H" secondAttribute="centerX" id="5Jh-yd-LzQ"/>
+                            <constraint firstItem="TzB-Fh-7eU" firstAttribute="centerX" secondItem="C9m-GK-Sen" secondAttribute="centerX" id="HOs-Ed-6TJ"/>
+                            <constraint firstItem="ol3-jT-F0m" firstAttribute="centerX" secondItem="n75-c8-ELC" secondAttribute="centerX" id="MZ1-2A-3xe"/>
+                            <constraint firstItem="Ehp-go-fEh" firstAttribute="top" secondItem="ol3-jT-F0m" secondAttribute="bottom" constant="69" id="SYf-Cb-WzR"/>
+                            <constraint firstItem="TzB-Fh-7eU" firstAttribute="leading" secondItem="RL1-Cu-z9H" secondAttribute="leading" constant="85" id="Z01-M7-Sr8"/>
+                            <constraint firstItem="TzB-Fh-7eU" firstAttribute="trailing" secondItem="n75-c8-ELC" secondAttribute="trailing" id="aSd-Zr-7Gq"/>
+                            <constraint firstAttribute="centerY" secondItem="TzB-Fh-7eU" secondAttribute="centerY" id="ffd-cz-b85"/>
+                            <constraint firstItem="n75-c8-ELC" firstAttribute="leading" secondItem="TzB-Fh-7eU" secondAttribute="leading" id="gHS-0d-6JN"/>
+                            <constraint firstItem="C9m-GK-Sen" firstAttribute="top" secondItem="tq0-2e-szW" secondAttribute="bottom" constant="81" id="lFI-Ja-QW5"/>
+                            <constraint firstItem="ol3-jT-F0m" firstAttribute="top" secondItem="n75-c8-ELC" secondAttribute="bottom" constant="78" id="s92-ht-yYw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lFI-Ja-QW5"/>
+                                <exclude reference="SYf-Cb-WzR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="logoImageView" destination="C9m-GK-Sen" id="Iwk-cH-i9N"/>
+                        <outlet property="passwordTextField" destination="n75-c8-ELC" id="hMH-fb-kc7"/>
+                        <outlet property="userIDTextField" destination="TzB-Fh-7eU" id="xFu-g7-3Z4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QmT-86-jMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="120.120.png" width="120" height="120"/>
+    </resources>
+</document>
